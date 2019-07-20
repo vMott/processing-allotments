@@ -1,11 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as firebase from 'firebase';
-const serviceAccount = require("../processingallotmentstask-firebase-adminsdk-yo33r-6fb4fec120.json");
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://processingallotmentstask.firebaseio.com"
-});
+admin.initializeApp();
 
 
 
